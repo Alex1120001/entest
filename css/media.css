@@ -1,3 +1,8 @@
+@media (max-width:1330px){
+    .main-content div h1{
+        font-size: 50px;
+    }
+}
 @media (max-width:1200px){
     .wrap-header{
         flex-direction: column;
@@ -82,5 +87,16 @@
     }
     h2{
         font-size: 28px !important; 
+    }
+    .block-us div a{
+        padding: 5px 20px;
+    }
+    .code a{
+        padding: 5px 20px;
+    }
+    .email{
+        display: flex;
+        /* margin: 10px auto; */
+        justify-content: center;
     }
 }

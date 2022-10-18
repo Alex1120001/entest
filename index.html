@@ -22,10 +22,10 @@
                     <span>language club</span>
                 </div>
                 <div class="main-menu">
-                    <span><a href="#">Огляд</a></span>
-                    <span><a href="#">Функції</a></span>
-                    <span><a href="#">Про нас</a></span>
-                    <span><a href="#">Ціни</a></span>
+                    <span><a href="#review">Огляд</a></span>
+                    <span><a href="#function">Функції</a></span>
+                    <span><a href="#forus">Про нас</a></span>
+                    <span><a href="#price">Ціни</a></span>
                 </div>
                 <div class="lang-header">
                     <a href="#">
@@ -38,10 +38,12 @@
                 </div>
             </div>
         </header>
+        <a name="review"></a>
         <div class="main-content">
             <div>
                 <h1>Розвивайте свої навички разом із нами</h1>
-                <p>Якщо у вас немає знань з англійської, але є бажання навчатися, ми надаємо вам курс на місяць чи більше, в
+                <p>Якщо у вас немає знань з англійської, але є бажання навчатися, ми надаємо вам курс на місяць чи
+                    більше, в
                     якому ви будете слухати подкасти, читати книги, вчити слова та спілкуватися з носієм мови!</p>
                 <div class="btn-control">
                     <a href="#">Почати</a>
@@ -52,6 +54,7 @@
                 <img src="./images/main-img.svg" alt="">
             </div>
         </div>
+        <a name="function"></a>
         <div class="for-us">
             <div class="block">
                 <h2>Чому ми краще за інших?</h2>
@@ -77,7 +80,9 @@
                 </p>
             </div>
         </div>
-    
+    </div>
+    <a name="forus"></a>
+    <div class="wrap-whyus">
         <div class="why-us">
             <div class="block-us">
                 <div class="img-us">
@@ -98,7 +103,7 @@
             <div class="block-us">
                 <div class="test-us">
                     <h1>
-                        Ви можете займатися у будь-який зручний для вас час
+                        Ви можете займатися у будь-який <span>зручний для вас час</span>
                     </h1>
                     <p>
                         Розклад занять створюєте ви, обговорюєте з адміністрацією клубу та приступаєте до навчання
@@ -112,13 +117,22 @@
                 </div>
             </div>
         </div>
-    
+    </div>
+    <div class="main-wrap">
+        <a name="price"></a>
         <div class="card-goods">
             <h1>Тут усі наші плани</h1>
+            <div class="switch" onclick="func()">
+                <span>Щомісяця</span>
+                <div class="sw">
+                    <div class="sw-start"></div>
+                </div>
+                <span>Щорічно</span>
+            </div>
             <div class="wrap-card">
                 <div class="card">
                     <h2>Start</h2>
-                    <p><span>600грн</span>/місяць</p>
+                    <p><span class="start">600грн</span>/місяць</p>
                     <div>
                         <img class="green" src="./images/check mark.svg" alt="">
                         <span>Відео уроки</span>
@@ -143,7 +157,7 @@
                 </div>
                 <div class="card">
                     <h2>Advance</h2>
-                    <p><span>600грн</span>/місяць</p>
+                    <p><span class="advance">900грн</span>/місяць</p>
                     <div>
                         <img class="green" src="./images/check mark.svg" alt="">
                         <span>Відео уроки</span>
@@ -167,8 +181,8 @@
                     <a href="#">Почати</a>
                 </div>
                 <div class="card">
-                    <h2>Start</h2>
-                    <p><span>600грн</span>/місяць</p>
+                    <h2>Premium</h2>
+                    <p><span class="premium">1300грн</span>/місяць</p>
                     <div>
                         <img class="green" src="./images/check mark.svg" alt="">
                         <span>Відео уроки</span>
@@ -213,6 +227,9 @@
             <button>Підписатися</button>
         </div>
     </footer>
+
+
+    <script src="./script/js.js"></script>
 </body>
 
 </html>
